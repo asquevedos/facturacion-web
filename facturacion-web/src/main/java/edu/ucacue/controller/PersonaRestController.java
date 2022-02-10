@@ -33,7 +33,7 @@ import org.springframework.web.multipart.MultipartFile;
 import edu.ucacue.infraestructura.repository.PersonaRepositorio;
 import edu.ucacue.modelo.Persona;
 
-@CrossOrigin(origins = { "http://localhost:4200" })
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping("/api")
 public class PersonaRestController {
