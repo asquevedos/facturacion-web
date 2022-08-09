@@ -49,6 +49,7 @@ public class PersonaRestController {
 	@GetMapping("/clientes/{id}")
 	public Persona getById(@PathVariable int id) {
 
+
 		Persona persona = personaRepositorio.findById(id).get();
 		return persona;
 	}
